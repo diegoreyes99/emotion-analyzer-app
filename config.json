@@ -1,0 +1,82 @@
+{
+  "champion_name": "Fine-Tuned (HuBERT)",
+  "champion_input_type": "emb",
+  "n_features": 151,
+  "n_emb": 768,
+  "emotions": [
+    "neutral",
+    "calm",
+    "happy",
+    "sad",
+    "angry",
+    "fearful",
+    "disgust",
+    "surprised"
+  ],
+  "emojis": {
+    "neutral": "😐",
+    "calm": "😌",
+    "happy": "😊",
+    "sad": "😢",
+    "angry": "😠",
+    "fearful": "😨",
+    "disgust": "🤢",
+    "surprised": "😲"
+  },
+  "all_results": {
+    "Feed-Forward NN": {
+      "test_acc": 0.7812370278123703,
+      "f1_weighted": 0.7809081087313944,
+      "n_params": 252744,
+      "input_type": "classic"
+    },
+    "1D-CNN": {
+      "test_acc": 0.7667081776670818,
+      "f1_weighted": 0.7660879132253159,
+      "n_params": 262664,
+      "input_type": "classic"
+    },
+    "ResNet": {
+      "test_acc": 0.776255707762557,
+      "f1_weighted": 0.7759188350873883,
+      "n_params": 587336,
+      "input_type": "classic"
+    },
+    "LSTM": {
+      "test_acc": 0.7359900373599004,
+      "f1_weighted": 0.7358499485610022,
+      "n_params": 241032,
+      "input_type": "classic"
+    },
+    "BiLSTM+Attention": {
+      "test_acc": 0.7505188875051889,
+      "f1_weighted": 0.7497625501654351,
+      "n_params": 702729,
+      "input_type": "classic"
+    },
+    "Transformer": {
+      "test_acc": 0.7604815276048152,
+      "f1_weighted": 0.759358475545483,
+      "n_params": 803400,
+      "input_type": "classic"
+    },
+    "Conv-Transformer": {
+      "test_acc": 0.7393109173931092,
+      "f1_weighted": 0.7389037270970861,
+      "n_params": 705480,
+      "input_type": "classic"
+    },
+    "Fine-Tuned (HuBERT)": {
+      "test_acc": 0.8094645080946451,
+      "f1_weighted": 0.809056677032946,
+      "n_params": 560776,
+      "input_type": "emb"
+    },
+    "Distilled Student": {
+      "test_acc": 0.8094645080946451,
+      "f1_weighted": 0.8092167214293161,
+      "n_params": 107592,
+      "input_type": "emb"
+    }
+  }
+}
